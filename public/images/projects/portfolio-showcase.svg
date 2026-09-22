@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#181829" />
+    </linearGradient>
+    <linearGradient id="glowViolet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#pBg)" />
+  
+  <rect x="40" y="30" width="720" height="440" rx="12" fill="rgba(24, 24, 42, 0.7)" stroke="rgba(139, 92, 246, 0.25)" stroke-width="1" />
+  
+  <!-- Header nav -->
+  <rect x="70" y="55" width="36" height="36" rx="8" fill="url(#glowViolet)" />
+  <text x="88" y="79" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">EK</text>
+  <text x="120" y="78" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="bold">Eman Khan</text>
+  
+  <text x="470" y="77" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Projects</text>
+  <text x="540" y="77" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Skills</text>
+  <text x="600" y="77" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Certificates</text>
+  <rect x="680" y="60" width="60" height="28" rx="6" fill="url(#glowViolet)" />
+  <text x="710" y="78" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Contact</text>
+
+  <!-- Hero mock inside portfolio -->
+  <rect x="80" y="120" width="130" height="26" rx="13" fill="rgba(139, 92, 246, 0.15)" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1" />
+  <circle cx="95" cy="133" r="4" fill="#10b981" />
+  <text x="110" y="137" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600">WEB DEVELOPER</text>
+
+  <text x="80" y="185" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="28" font-weight="bold">Hi, I'm Eman Khan.</text>
+  <text x="80" y="225" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="22" font-weight="bold">I Build Modern Digital Experiences.</text>
+  <text x="80" y="255" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Focused on responsive, interactive and user-friendly web applications.</text>
+
+  <!-- Code editor visual in portfolio -->
+  <rect x="80" y="285" width="640" height="160" rx="10" fill="#090d16" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+  <circle cx="100" cy="305" r="5" fill="#ef4444" />
+  <circle cx="116" cy="305" r="5" fill="#eab308" />
+  <circle cx="132" cy="305" r="5" fill="#22c55e" />
+  <text x="155" y="309" fill="#64748b" font-family="monospace" font-size="11">developer.config.ts</text>
+
+  <text x="100" y="340" fill="#f43f5e" font-family="monospace" font-size="12">const</text>
+  <text x="145" y="340" fill="#38bdf8" font-family="monospace" font-size="12">developer</text>
+  <text x="215" y="340" fill="#f8fafc" font-family="monospace" font-size="12">= {</text>
+  <text x="120" y="362" fill="#94a3b8" font-family="monospace" font-size="12">name: <tspan fill="#a7f3d0">'Eman Khan'</tspan>, stack: [<tspan fill="#fde047">'Next.js'</tspan>, <tspan fill="#fde047">'React'</tspan>, <tspan fill="#fde047">'TypeScript'</tspan>, <tspan fill="#fde047">'Supabase'</tspan>],</text>
+  <text x="120" y="384" fill="#94a3b8" font-family="monospace" font-size="12">learning: <tspan fill="#fde047">'MongoDB'</tspan>, passionate: <tspan fill="#f43f5e">true</tspan></text>
+  <text x="100" y="406" fill="#f8fafc" font-family="monospace" font-size="12">};</text>
+</svg>

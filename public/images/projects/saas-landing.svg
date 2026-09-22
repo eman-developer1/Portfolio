@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="saasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#1e1035" />
+    </linearGradient>
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#saasGrad)" />
+  
+  <!-- Subtle circular background glow -->
+  <circle cx="400" cy="180" r="160" fill="rgba(236, 72, 153, 0.08)" filter="blur(40px)" />
+
+  <rect x="40" y="30" width="720" height="440" rx="12" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+  
+  <!-- Nav -->
+  <text x="70" y="70" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="bold">Apex<tspan fill="#ec4899">.</tspan>Analytics</text>
+  <rect x="650" y="52" width="80" height="28" rx="14" fill="url(#purplePink)" />
+  <text x="690" y="70" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Start Free</text>
+
+  <!-- Hero Content -->
+  <rect x="330" y="110" width="140" height="24" rx="12" fill="rgba(236, 72, 153, 0.15)" stroke="rgba(236, 72, 153, 0.4)" stroke-width="1" />
+  <text x="400" y="126" fill="#f472b6" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">⚡ V2.0 IS LIVE</text>
+
+  <text x="400" y="175" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">Actionable Growth Metrics</text>
+  <text x="400" y="210" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Track customer retention, subscription churn, and revenue trends in real-time.</text>
+
+  <!-- Chart Card Preview -->
+  <rect x="120" y="240" width="560" height="210" rx="12" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+  
+  <text x="145" y="275" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Annual Recurring Revenue (ARR)</text>
+  <text x="145" y="305" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="24" font-weight="bold">$184,200 <tspan fill="#4ade80" font-size="13">+28.4%</tspan></text>
+
+  <!-- Graph wave path -->
+  <path d="M 145 400 C 220 380, 270 330, 340 340 C 400 350, 460 300, 520 280 C 580 260, 620 250, 650 245" fill="none" stroke="url(#purplePink)" stroke-width="3" />
+  <circle cx="650" cy="245" r="5" fill="#ec4899" />
+</svg>

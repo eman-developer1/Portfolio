@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="webCertBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="emeraldSeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="560" rx="16" fill="#061c18" />
+  
+  <rect x="25" y="25" width="750" height="510" rx="12" fill="none" stroke="url(#webCertBorder)" stroke-width="2" />
+  <rect x="35" y="35" width="730" height="490" rx="8" fill="#0b2923" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+  
+  <circle cx="400" cy="90" r="28" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2" />
+  <path d="M388 90 L400 78 L412 90 L400 102 Z" fill="#34d399" />
+
+  <text x="400" y="145" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="3" text-anchor="middle">CERTIFICATE OF COMPLETION</text>
+  <text x="400" y="180" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="23" font-weight="bold" text-anchor="middle">Complete Modern Web Development &amp; Backend Services</text>
+  
+  <text x="400" y="215" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Proudly conferred upon</text>
+  
+  <text x="400" y="265" fill="#34d399" font-family="system-ui, sans-serif" font-size="34" font-weight="bold" text-anchor="middle">Eman Khan</text>
+  <line x1="250" y1="285" x2="550" y2="285" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1" />
+
+  <text x="400" y="325" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">for comprehensive proficiency in HTML5, CSS3, JavaScript ES6+, responsive styling,</text>
+  <text x="400" y="348" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">Node.js server operations, and modern cloud backend integration.</text>
+
+  <circle cx="160" cy="440" r="35" fill="url(#emeraldSeal)" opacity="0.9" />
+  <text x="160" y="445" fill="#022c22" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">ACCREDITED</text>
+
+  <text x="400" y="425" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">ISSUED BY</text>
+  <text x="400" y="445" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Tech Academy Global</text>
+  <text x="400" y="465" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Credential ID: CERT-EK-55102 • Year: 2024</text>
+
+  <line x1="600" y1="445" x2="720" y2="445" stroke="#64748b" stroke-width="1" />
+  <path d="M610 438 Q650 415 680 442 T710 430" fill="none" stroke="#34d399" stroke-width="2" />
+  <text x="660" y="465" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Academic Dean</text>
+</svg>

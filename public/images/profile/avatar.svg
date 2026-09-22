@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0b5" />
+      <stop offset="100%" stop-color="#e0ac82" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle with glow -->
+  <circle cx="100" cy="100" r="95" fill="#0f172a" stroke="url(#avatarBg)" stroke-width="4" />
+
+  <!-- Stylized avatar silhouette / developer character -->
+  <circle cx="100" cy="80" r="36" fill="url(#skin)" />
+  
+  <!-- Hair / modern style -->
+  <path d="M66 75 C 66 45, 134 45, 134 75 C 134 60, 120 50, 100 50 C 80 50, 68 62, 66 75 Z" fill="#1e293b" />
+
+  <!-- Glasses -->
+  <rect x="74" y="72" width="22" height="15" rx="3" fill="none" stroke="#0284c7" stroke-width="2.5" />
+  <rect x="104" y="72" width="22" height="15" rx="3" fill="none" stroke="#0284c7" stroke-width="2.5" />
+  <line x1="96" y1="78" x2="104" y2="78" stroke="#0284c7" stroke-width="2.5" />
+
+  <!-- Smile -->
+  <path d="M90 97 Q100 106 110 97" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Developer Hoodie / Clothing -->
+  <path d="M50 170 C 55 130, 80 120, 100 120 C 120 120, 145 130, 150 170 Z" fill="#334155" />
+  <path d="M85 125 L100 148 L115 125" fill="#475569" />
+
+  <!-- Code symbol badge in bottom corner -->
+  <circle cx="150" cy="150" r="22" fill="#0284c7" stroke="#0f172a" stroke-width="3" />
+  <path d="M143 145 L138 150 L143 155 M157 145 L162 150 L157 155" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
