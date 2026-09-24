@@ -7,7 +7,7 @@ import { PortfolioSettings } from '@/types';
 import { getPortfolioSettings } from '@/lib/supabase/db';
 import { ArrowRight, MessageSquare, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/Common/Icons';
-import profilePhoto from '@/app/image.png';
+// import profilePhoto from '@/app/image.png';
 import styles from './Hero.module.css';
 
 export const Hero: React.FC = () => {
@@ -41,9 +41,7 @@ export const Hero: React.FC = () => {
 
   const rawWhatsapp = settings.whatsapp ? settings.whatsapp.replace(/[^\d+]/g, '') : '1234567890';
   const whatsappUrl = rawWhatsapp.startsWith('+') ? `https://wa.me/${rawWhatsapp.slice(1)}` : `https://wa.me/${rawWhatsapp}`;
-  const profileImageSrc = (settings.profileImageUrl && !settings.profileImageUrl.includes('avatar.svg'))
-    ? settings.profileImageUrl
-    : profilePhoto;
+  const profileImageSrc = settings.profileImageUrl || 'https://avatars.githubusercontent.com/u/237277296?v=4';
 
   return (
     <section id="hero" className={styles.hero}>
@@ -57,6 +55,7 @@ export const Hero: React.FC = () => {
               width={380}
               height={380}
               priority
+              unoptimized={true}
               className={styles.profileImage}
             />
           </div>

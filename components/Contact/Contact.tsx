@@ -291,13 +291,13 @@ export const Contact: React.FC = () => {
               )}
             </div>
 
-            {/* Availability Badge */}
-            <div className={styles.availabilityBadge}>
+
+            {/* <div className={styles.availabilityBadge}>
               <span className={styles.availabilityDot} />
               <span className={styles.availabilityText}>
                 {settings.availabilityStatus || 'Available for freelance & full-time roles'}
               </span>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column: Interactive Form */}
@@ -350,7 +350,7 @@ export const Contact: React.FC = () => {
                     type="text"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="e.g. Alex Johnson"
+                    placeholder="e.g. Eman Khan"
                     className={`${styles.input} ${errors.name ? styles.inputError : ''}`}
                     aria-invalid={Boolean(errors.name)}
                     aria-describedby={errors.name ? 'name-error' : undefined}
@@ -374,7 +374,7 @@ export const Contact: React.FC = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="alex@example.com"
+                    placeholder="eman@example.com"
                     className={`${styles.input} ${errors.email ? styles.inputError : ''}`}
                     aria-invalid={Boolean(errors.email)}
                     aria-describedby={errors.email ? 'email-error' : undefined}
