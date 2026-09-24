@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
   }, []);
 
   const email = settings?.email || 'contact.emankhan@example.com';
-  const whatsapp = settings?.whatsapp || '+1 (234) 567-890';
+  const whatsapp = settings?.whatsapp || '+92 3298386594';
   const phone = settings?.phone;
   const rawWhatsapp = whatsapp.replace(/[^\d+]/g, '');
   const whatsappUrl = rawWhatsapp.startsWith('+') ? `https://wa.me/${rawWhatsapp.slice(1)}` : `https://wa.me/${rawWhatsapp}`;
