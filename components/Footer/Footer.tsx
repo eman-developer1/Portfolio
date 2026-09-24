@@ -56,9 +56,8 @@ export const Footer: React.FC = () => {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className={`${styles.footerLink} ${link.isAdmin ? styles.adminNavLink : ''}`}
+                    className={styles.footerLink}
                   >
-                    {link.isAdmin && <ShieldCheck size={14} className={styles.adminIcon} />}
                     <span>{link.label}</span>
                   </Link>
                 </li>
