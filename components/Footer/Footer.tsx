@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { socialLinks as defaultSocials } from '@/data/socials';
 import { PortfolioSettings } from '@/types';
-import { getPortfolioSettings } from '@/lib/supabase/db';
+
 import { Mail, MessageSquare, Phone, Code, ShieldCheck } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/Common/Icons';
 import styles from './Footer.module.css';
@@ -16,31 +16,13 @@ const footerNavLinks = [
   { label: 'Featured Projects', href: '#projects' },
   { label: 'Assignments', href: '#assignments' },
   { label: 'Services', href: '#services' },
-  { label: 'Certificates', href: '#certificates' },
   { label: 'Contact', href: '#contact' },
-  { label: 'Admin Portal', href: '/admin', isAdmin: true },
 ];
 
 export const Footer: React.FC = () => {
   const [settings, setSettings] = useState<PortfolioSettings | null>(null);
 
-  useEffect(() => {
-    let isMounted = true;
-    const loadSettings = async () => {
-      try {
-        const data = await getPortfolioSettings();
-        if (isMounted && data) {
-          setSettings(data);
-        }
-      } catch {
-        // preserve default
-      }
-    };
-    loadSettings();
-    return () => {
-      isMounted = false;
-    };
-  }, []);
+
 
   const email = settings?.email || 'emanaslam182@gmail.com';
   const whatsapp = settings?.whatsapp || '+92 3298386594';
@@ -158,10 +140,7 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} {settings?.name || 'Eman Khan'}. All rights reserved.
           </p>
           <div className={styles.bottomRight}>
-            <Link href="/admin" className={styles.adminQuickBtn} title="Access Admin Portal">
-              <ShieldCheck size={13} />
-              <span>Admin Portal</span>
-            </Link>
+
             <div className={styles.builtWithTag}>
               <Code size={14} color="var(--accent-cyan)" />
               <span>Built with Next.js &amp; TypeScript</span>

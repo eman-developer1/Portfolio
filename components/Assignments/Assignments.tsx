@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Assignment } from '@/types';
-import { getAssignments } from '@/lib/supabase/db';
+
 import { assignments as initialAssignments } from '@/data/assignments';
 import { AssignmentCard } from './AssignmentCard';
 import { BookMarked } from 'lucide-react';
@@ -12,23 +12,7 @@ export const Assignments: React.FC = () => {
   const [assignmentList, setAssignmentList] = useState<Assignment[]>(initialAssignments);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    let isMounted = true;
-    const load = async () => {
-      try {
-        const data = await getAssignments();
-        if (isMounted && data && data.length > 0) {
-          setAssignmentList(data);
-        }
-      } catch {
-        // keep fallback
-      } finally {
-        if (isMounted) setLoading(false);
-      }
-    };
-    load();
-    return () => { isMounted = false; };
-  }, []);
+
 
   return (
     <section id="assignments" className={`section ${styles.assignmentsSection}`}>

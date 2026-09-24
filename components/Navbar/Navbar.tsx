@@ -13,7 +13,6 @@ const navItems = [
   { label: 'Projects', href: '#projects' },
   { label: 'Assignments', href: '#assignments' },
   { label: 'Services', href: '#services' },
-  { label: 'Certificates', href: '#certificates' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -28,7 +27,7 @@ export const Navbar: React.FC = () => {
       setIsScrolled(window.scrollY > 20);
 
       // Simple active section detection
-      const sections = ['hero', 'about', 'skills', 'projects', 'assignments', 'services', 'certificates', 'contact'];
+      const sections = ['hero', 'about', 'skills', 'projects', 'assignments', 'services', 'contact'];
       for (const section of [...sections].reverse()) {
         const el = document.getElementById(section);
         if (el) {

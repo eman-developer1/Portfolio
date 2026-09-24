@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { PortfolioSettings } from '@/types';
-import { getPortfolioSettings } from '@/lib/supabase/db';
+
 import { ArrowRight, MessageSquare, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/Common/Icons';
 // import profilePhoto from '@/app/image.png';
@@ -23,21 +23,7 @@ export const Hero: React.FC = () => {
     bio: ''
   });
 
-  useEffect(() => {
-    let isMounted = true;
-    const fetchSettings = async () => {
-      try {
-        const data = await getPortfolioSettings();
-        if (isMounted && data) {
-          setSettings(data);
-        }
-      } catch {
-        // preserve fallback
-      }
-    };
-    fetchSettings();
-    return () => { isMounted = false; };
-  }, []);
+
 
   const rawWhatsapp = settings.whatsapp ? settings.whatsapp.replace(/[^\d+]/g, '') : '3298386594';
   const whatsappUrl = rawWhatsapp.startsWith('+') ? `https://wa.me/${rawWhatsapp.slice(1)}` : `https://wa.me/${rawWhatsapp}`;

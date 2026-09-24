@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { PortfolioSettings } from '@/types';
-import { getPortfolioSettings } from '@/lib/supabase/db';
+
 import {
   Mail,
   MessageSquare,
@@ -60,21 +60,7 @@ export const Contact: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  useEffect(() => {
-    let isMounted = true;
-    const loadSettings = async () => {
-      try {
-        const data = await getPortfolioSettings();
-        if (isMounted && data) {
-          setSettings(data);
-        }
-      } catch {
-        // preserve defaults
-      }
-    };
-    loadSettings();
-    return () => { isMounted = false; };
-  }, []);
+
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};

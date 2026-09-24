@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { services as fallbackServices } from '@/data/services';
 import { Service } from '@/types';
-import { getServices } from '@/lib/supabase/db';
+
 import { ServiceCard } from './ServiceCard';
 import { Briefcase } from 'lucide-react';
 import styles from './Services.module.css';
@@ -11,21 +11,7 @@ import styles from './Services.module.css';
 export const Services: React.FC = () => {
   const [serviceList, setServiceList] = useState<Service[]>(fallbackServices);
 
-  useEffect(() => {
-    let isMounted = true;
-    const load = async () => {
-      try {
-        const data = await getServices();
-        if (isMounted && data && data.length > 0) {
-          setServiceList(data.filter((s) => s.active !== false));
-        }
-      } catch {
-        // keep fallback
-      }
-    };
-    load();
-    return () => { isMounted = false; };
-  }, []);
+
 
   return (
     <section id="services" className={`section ${styles.servicesSection}`}>

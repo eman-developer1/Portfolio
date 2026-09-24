@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { projects as fallbackProjects, projectFilterCategories } from '@/data/projects';
 import { Project, ProjectCategory } from '@/types';
-import { getProjects } from '@/lib/supabase/db';
+
 import { ProjectCard } from './ProjectCard';
 import { ProjectModal } from './ProjectModal';
 import { FolderGit2 } from 'lucide-react';
@@ -14,21 +14,7 @@ export const Projects: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>('all');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  useEffect(() => {
-    let isMounted = true;
-    const load = async () => {
-      try {
-        const data = await getProjects();
-        if (isMounted && data && data.length > 0) {
-          setProjectList(data);
-        }
-      } catch {
-        // keep fallback
-      }
-    };
-    load();
-    return () => { isMounted = false; };
-  }, []);
+
 
   const filteredProjects = projectList.filter((project) => {
     if (activeCategory === 'all') return true;
