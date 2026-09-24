@@ -41,7 +41,10 @@ export const Hero: React.FC = () => {
 
   const rawWhatsapp = settings.whatsapp ? settings.whatsapp.replace(/[^\d+]/g, '') : '3298386594';
   const whatsappUrl = rawWhatsapp.startsWith('+') ? `https://wa.me/${rawWhatsapp.slice(1)}` : `https://wa.me/${rawWhatsapp}`;
-  const profileImageSrc = settings.profileImageUrl || 'https://avatars.githubusercontent.com/u/237277296?v=4';
+  // Use the local image.png from public folder if no custom Supabase image is set
+  const profileImageSrc = (settings.profileImageUrl && settings.profileImageUrl !== '/images/profile/avatar.svg')
+    ? settings.profileImageUrl 
+    : '/image.png';
 
   return (
     <section id="hero" className={styles.hero}>
