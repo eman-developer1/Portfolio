@@ -422,7 +422,7 @@ export default function AdminAssignmentsPage() {
                     type="url"
                     value={githubUrl}
                     onChange={(e) => setGithubUrl(e.target.value)}
-                    placeholder="https://github.com/emankhan-dev/assignment"
+                    placeholder="https://github.com/eman-developer1/assignment"
                     className={styles.input}
                   />
                 </div>

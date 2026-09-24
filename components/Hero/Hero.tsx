@@ -16,10 +16,10 @@ export const Hero: React.FC = () => {
     professionalTitle: 'Web Developer',
     heroHeading: 'I Build Modern Digital Experiences.',
     heroDescription: "I'm a Web Developer focused on creating responsive, interactive and user-friendly websites and web applications using modern technologies.",
-    email: 'contact.emankhan@example.com',
-    whatsapp: '+1 (234) 567-890',
-    githubUrl: 'https://github.com/emankhan-dev',
-    linkedinUrl: 'https://linkedin.com/in/eman-khan-dev',
+    email: 'emanaslam182@gmail.com',
+    whatsapp: '+92 3298386594',
+    githubUrl: 'https://github.com/eman-developer1',
+    linkedinUrl: 'https://www.linkedin.com/in/eman-khan-a5582b334/',
     bio: ''
   });
 
@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
     return () => { isMounted = false; };
   }, []);
 
-  const rawWhatsapp = settings.whatsapp ? settings.whatsapp.replace(/[^\d+]/g, '') : '1234567890';
+  const rawWhatsapp = settings.whatsapp ? settings.whatsapp.replace(/[^\d+]/g, '') : '3298386594';
   const whatsappUrl = rawWhatsapp.startsWith('+') ? `https://wa.me/${rawWhatsapp.slice(1)}` : `https://wa.me/${rawWhatsapp}`;
   const profileImageSrc = settings.profileImageUrl || 'https://avatars.githubusercontent.com/u/237277296?v=4';
 

@@ -42,13 +42,13 @@ export const Footer: React.FC = () => {
     };
   }, []);
 
-  const email = settings?.email || 'contact.emankhan@example.com';
+  const email = settings?.email || 'emanaslam182@gmail.com';
   const whatsapp = settings?.whatsapp || '+92 3298386594';
   const phone = settings?.phone;
   const rawWhatsapp = whatsapp.replace(/[^\d+]/g, '');
   const whatsappUrl = rawWhatsapp.startsWith('+') ? `https://wa.me/${rawWhatsapp.slice(1)}` : `https://wa.me/${rawWhatsapp}`;
-  const githubUrl = settings?.githubUrl || 'https://github.com/emankhan-dev';
-  const linkedinUrl = settings?.linkedinUrl || 'https://linkedin.com/in/eman-khan-dev';
+  const githubUrl = settings?.githubUrl || 'https://github.com/eman-developer1';
+  const linkedinUrl = settings?.linkedinUrl || 'https://www.linkedin.com/in/eman-khan-a5582b334/';
 
   return (
     <footer className={styles.footer}>

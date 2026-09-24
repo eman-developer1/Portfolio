@@ -11,7 +11,7 @@ export const assignments: Assignment[] = [
     imageUrl: '/images/assignments/ecommerce-api.svg',
     fileUrl: '/images/assignments/ecommerce-api.svg',
     liveUrl: 'https://example.com/demo/ecommerce-api',
-    githubUrl: 'https://github.com/emankhan-dev/ecommerce-rest-api',
+    githubUrl: 'https://github.com/eman-developer1/ecommerce-rest-api',
     status: 'Completed',
     featured: true
   },
@@ -25,7 +25,7 @@ export const assignments: Assignment[] = [
     imageUrl: '/images/assignments/algo-visualizer.svg',
     fileUrl: '/images/assignments/algo-visualizer.svg',
     liveUrl: 'https://example.com/demo/algorithm-visualizer',
-    githubUrl: 'https://github.com/emankhan-dev/algorithm-visualizer',
+    githubUrl: 'https://github.com/eman-developer1/algorithm-visualizer',
     status: 'Completed',
     featured: true
   },
@@ -39,7 +39,7 @@ export const assignments: Assignment[] = [
     imageUrl: '/images/assignments/mongodb-crud.svg',
     fileUrl: '/images/assignments/mongodb-crud.svg',
     liveUrl: '',
-    githubUrl: 'https://github.com/emankhan-dev/mongodb-aggregation-lab',
+    githubUrl: 'https://github.com/eman-developer1/mongodb-aggregation-lab',
     status: 'In Progress',
     featured: false
   }

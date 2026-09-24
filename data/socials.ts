@@ -4,29 +4,29 @@ export const socialLinks: SocialLink[] = [
   {
     platform: 'github',
     label: 'GitHub',
-    url: 'https://github.com/emankhan-dev',
+    url: 'https://github.com/eman-developer1',
     displayValue: 'github.com/emankhan-dev',
     iconName: 'Github'
   },
   {
     platform: 'linkedin',
     label: 'LinkedIn',
-    url: 'https://linkedin.com/in/eman-khan-dev',
-    displayValue: 'linkedin.com/in/eman-khan-dev',
+    url: 'https://www.linkedin.com/in/eman-khan-a5582b334/',
+    displayValue: 'linkedin.com/in/eman-khan-a5582b334',
     iconName: 'Linkedin'
   },
   {
     platform: 'email',
     label: 'Email',
-    url: 'mailto:contact.emankhan@example.com',
-    displayValue: 'contact.emankhan@example.com',
+    url: 'mailto:emanaslam182@gmail.com',
+    displayValue: 'emanaslam182@gmail.com',
     iconName: 'Mail'
   },
   {
     platform: 'whatsapp',
     label: 'WhatsApp',
     url: 'https://wa.me/1234567890',
-    displayValue: '+1 (234) 567-890',
+    displayValue: '+92 3298386594',
     iconName: 'MessageSquare'
   }
 ];

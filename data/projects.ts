@@ -17,7 +17,7 @@ export const projects: Project[] = [
     category: 'fullstack',
     image: '/images/projects/restaurant-system.svg',
     liveUrl: 'https://example.com/demo/restaurant-system',
-    githubUrl: 'https://github.com/emankhan-dev/restaurant-management-system',
+    githubUrl: 'https://github.com/eman-developer1/restaurant-management-system',
     featured: true
   },
   {
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     category: 'nextjs',
     image: '/images/projects/car-report.svg',
     liveUrl: 'https://example.com/demo/car-report-platform',
-    githubUrl: 'https://github.com/emankhan-dev/car-report-platform',
+    githubUrl: 'https://github.com/eman-developer1/car-report-platform',
     featured: true
   },
   {
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     category: 'nextjs',
     image: '/images/projects/portfolio-showcase.svg',
     liveUrl: 'https://emankhan.dev',
-    githubUrl: 'https://github.com/emankhan-dev/portfolio',
+    githubUrl: 'https://github.com/eman-developer1/portfolio',
     featured: true
   },
   {
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     category: 'react',
     image: '/images/projects/task-dashboard.svg',
     liveUrl: 'https://example.com/demo/cloudflow-tasks',
-    githubUrl: 'https://github.com/emankhan-dev/cloudflow-tasks'
+    githubUrl: 'https://github.com/eman-developer1/cloudflow-tasks'
   },
   {
     id: 'modern-saas-landing',
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     category: 'frontend',
     image: '/images/projects/saas-landing.svg',
     liveUrl: 'https://example.com/demo/apex-analytics',
-    githubUrl: 'https://github.com/emankhan-dev/apex-analytics'
+    githubUrl: 'https://github.com/eman-developer1/apex-analytics'
   }
 ];
 

@@ -160,7 +160,7 @@ export default function AdminSettingsPage() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="contact.emankhan@example.com"
+                  placeholder="emanaslam182@gmail.com"
                   className={styles.input}
                 />
               </div>
@@ -174,7 +174,7 @@ export default function AdminSettingsPage() {
                   type="text"
                   value={whatsapp}
                   onChange={(e) => setWhatsapp(e.target.value)}
-                  placeholder="+1 (234) 567-890 or +92 300 1234567"
+                  placeholder="+92 3298386594 or +92 300 1234567"
                   className={styles.input}
                 />
               </div>
@@ -190,7 +190,7 @@ export default function AdminSettingsPage() {
                   type="text"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="+1 (234) 567-890"
+                  placeholder="+92 3298386594"
                   className={styles.input}
                 />
               </div>
@@ -348,7 +348,7 @@ export default function AdminSettingsPage() {
                 type="url"
                 value={githubUrl}
                 onChange={(e) => setGithubUrl(e.target.value)}
-                placeholder="https://github.com/emankhan-dev"
+                placeholder="https://github.com/eman-developer1"
                 className={styles.input}
               />
             </div>
@@ -359,7 +359,7 @@ export default function AdminSettingsPage() {
                 type="url"
                 value={linkedinUrl}
                 onChange={(e) => setLinkedinUrl(e.target.value)}
-                placeholder="https://linkedin.com/in/eman-khan-dev"
+                placeholder="https://www.linkedin.com/in/eman-khan-a5582b334/"
                 className={styles.input}
               />
             </div>

@@ -37,14 +37,14 @@ export const Contact: React.FC = () => {
     name: 'Eman Khan',
     professionalTitle: 'Web Developer',
     bio: "I'm a Web Developer focused on creating responsive, interactive and user-friendly websites and web applications using modern technologies.",
-    email: 'contact.emanalsam182@gmail.com',
+    email: 'emanaslam182@gmail.com',
     whatsapp: '+92 3298386594',
     phone: '+92 3298386594',
     location: 'Remote / Global',
     availabilityStatus: 'Available for freelance & full-time roles',
     customContactNotice: 'All inquiries receive prompt responses within 24 business hours.',
-    githubUrl: 'https://github.com/emankhan-dev',
-    linkedinUrl: 'https://linkedin.com/in/eman-khan-dev'
+    githubUrl: 'https://github.com/eman-developer1',
+    linkedinUrl: 'https://www.linkedin.com/in/eman-khan-a5582b334/'
   });
 
   const [formData, setFormData] = useState<FormData>({
@@ -172,7 +172,7 @@ export const Contact: React.FC = () => {
   };
 
   // Clean WhatsApp phone number for link
-  const rawWhatsapp = settings.whatsapp ? settings.whatsapp.replace(/[^\d+]/g, '') : '1234567890';
+  const rawWhatsapp = settings.whatsapp ? settings.whatsapp.replace(/[^\d+]/g, '') : '3298386594';
   const whatsappUrl = rawWhatsapp.startsWith('+') ? `https://wa.me/${rawWhatsapp.slice(1)}` : `https://wa.me/${rawWhatsapp}`;
 
   return (

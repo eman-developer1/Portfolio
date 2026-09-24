@@ -420,7 +420,7 @@ export default function AdminProjectsPage() {
                     type="url"
                     value={githubUrl}
                     onChange={(e) => setGithubUrl(e.target.value)}
-                    placeholder="https://github.com/emankhan-dev/repo"
+                    placeholder="https://github.com/eman-developer1/repo"
                     className={styles.input}
                   />
                 </div>

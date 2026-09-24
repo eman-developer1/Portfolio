@@ -681,17 +681,17 @@ export const getPortfolioSettings = async (): Promise<PortfolioSettings> => {
     name: personalInfo.name,
     professionalTitle: personalInfo.role,
     bio: personalInfo.bio,
-    email: 'contact.emankhan@example.com',
-    phone: '+1 (234) 567-890',
-    whatsapp: '+1 (234) 567-890',
+    email: 'emanaslam182@gmail.com',
+    phone: '+92 3298386594',
+    whatsapp: '+92 3298386594',
     location: personalInfo.location,
     availabilityStatus: 'Available for freelance & full-time roles',
     customContactNotice: 'All inquiries receive prompt responses within 24 business hours.',
     heroHeading: personalInfo.headline,
     heroDescription: personalInfo.bio,
     profileImageUrl: '/images/profile/avatar.svg',
-    githubUrl: 'https://github.com/emankhan-dev',
-    linkedinUrl: 'https://linkedin.com/in/eman-khan-dev'
+    githubUrl: 'https://github.com/eman-developer1',
+    linkedinUrl: 'https://www.linkedin.com/in/eman-khan-a5582b334/'
   };
 
   if (!isSupabaseConfigured) {
